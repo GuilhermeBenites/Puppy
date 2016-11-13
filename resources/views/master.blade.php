@@ -28,7 +28,7 @@
                 <!-- menu profile quick info -->
                 <div class="profile">
                     <div class="profile_pic">
-                        <img src="images/user.png" alt="..." class="img-circle profile_img">
+                        <img src="/images/user.png" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
                         <span>Bem-Vindo,</span>
@@ -86,8 +86,8 @@
                             </li>
                             <li><a><i class="fa fa-tags"></i> Categorias <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Categorias</a></li>
-                                    <li><a href="#">Nova Categoria</a></li>
+                                    <li><a href="{{url('categorias')}}">Categorias</a></li>
+                                    <li><a href="{{url('categorias/novo')}}">Nova Categoria</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -121,7 +121,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="images/user.png" alt="">Guilherme
+                                <img src="/images/user.png" alt="">Guilherme
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
