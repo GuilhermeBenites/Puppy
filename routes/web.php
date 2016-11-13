@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+
+Route::group(['prefix' => 'categorias'], function () {
+    Route::get('/', 'CategoriaController@index');
+    Route::get('/novo', 'CategoriaController@create');
+    Route::post('/novo', 'CategoriaController@store');
+    Route::get('/editar/{categoria}', 'CategoriaController@edit');
+    Route::put('/editar/{categoria}', 'CategoriaController@update');
+    Route::delete('/{categoria}', 'CategoriaController@destroy');
+});
